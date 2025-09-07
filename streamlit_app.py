@@ -4,7 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 
 # Get Gemini API key from Streamlit secrets
-gemini_api_key = ["AIzaSyCVoobkB6z5MbfvD_0zOgPV756Gix525K0"]
+gemini_api_key = st.secrets["gemini_api_key"]
 
 # Initialize Gemini LLM
 llm = ChatGoogleGenerativeAI(
